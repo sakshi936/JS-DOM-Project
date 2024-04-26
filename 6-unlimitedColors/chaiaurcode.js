@@ -13,7 +13,7 @@ const randomcolor= function(){
     return color;
 }
 
-// console.log(randomcolor());
+
 
 let setColor;
 const startchangingcolor = ()=>{

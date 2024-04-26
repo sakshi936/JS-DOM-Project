@@ -1,6 +1,5 @@
 
 const form = document.querySelector('form');
-// console.log(form);
 
 //  this use case will give empty value 
 // const height=   parseInt(document.querySelector('#height').value);
@@ -12,8 +11,7 @@ form.addEventListener('submit', (e)=>{
     const results=  document.querySelector('#results');
 
 
-    // console.log(height);
-    // console.log(weight);
+ 
     if(height ===' ' || height <0 || isNaN(height)){
         results.innerHTML=`Plases give a valid height ${height}`;
     }
@@ -33,7 +31,7 @@ form.addEventListener('submit', (e)=>{
         results.innerHTML = `<span> ${BMI}  Overweight</span>`;
        }
         
-        // console.log("working");
+       
 
     }
     

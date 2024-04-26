@@ -1,6 +1,5 @@
 let random = parseInt((Math.random() *100)+1);
 
-// console.log(random);
 
 const submit= document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
@@ -11,7 +10,7 @@ const lowhigh = document.querySelector('.lowOrHi');
 const startover = document.querySelector('.resultParas');
 
 
-// const p = document.createElement('p');
+
 const btn = document.createElement('button');
 btn.setAttribute('id','new_game');
 
@@ -37,7 +36,7 @@ function validateGuess(guess){
     }
     else{
         preGusses.push(guess);
-        // console.log(preGusses);
+      
         if(no_of_guess === 10){
             displayguess(guess);
             displaymsg(`Game over: Random no was ${random}`);
@@ -79,7 +78,7 @@ function displaymsg(msg){
 function newGame(){
 
     console.log("in new Game");
-    // console.log(startover.childNodes());
+   
     const new_game = document.querySelector('#new_game');
     new_game.addEventListener('click', function(e){
 
@@ -96,17 +95,12 @@ function newGame(){
     })
 }
 
-// let End_Restart_button = document.createElement('button');
-// End_Restart_button.setAttribute('class','End_Restart_button');
-
 function endGame(){
     console.log("in endgame");
     userInput.value='';
     userInput.setAttribute('disabled', '');
     
-    // End_Restart_button.innerHTML = 'New Game';
-
-    // btn.classList.add('button');
+    
     btn.innerHTML = `New Game`;
     startover.appendChild(btn);
     
